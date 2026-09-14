@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acyl Programming Language</title>
+    <link rel="icon" type="image/svg+xml" href="/assets/Acyl Logo.svg">
+    <link rel="stylesheet" href="/style.css">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="header">
+        <div id="headerLogo">
+            <img src="/Assets/Acyl Wordmark.svg" onclick="window.location.href = window.location.origin" alt="Acyl Logo">
+            <h1>Programming Language</h1>
+        </div>
+
+        <div id="navLinks">
+            <a id="onlineCompilerBtn">Online Compiler
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="1.243 0.843 9.483 10.345" aria-hidden="true" fill="currentColor">
+                    <path d="M8.949 2.505a.497.497 0 0 1 .546.546L9.5 3.1V8a.5.5 0 0 1-1 0V4.207l-5.147 5.15a.5.5 0 1 1-.707-.707L7.794 3.5H4a.5.5 0 0 1 0-1h4.9z"/>
+                </svg>
+            </a>
+            <a id="downloadBtn">Download for Windows
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="1.243 0.843 9.483 10.345" aria-hidden="true" fill="currentColor">
+                    <path d="M8.949 2.505a.497.497 0 0 1 .546.546L9.5 3.1V8a.5.5 0 0 1-1 0V4.207l-5.147 5.15a.5.5 0 1 1-.707-.707L7.794 3.5H4a.5.5 0 0 1 0-1h4.9z"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <div id="main">
+        <div id="section-1">
+            <h1>Acyl</h1>
+            <h2>Simple. Explicit. The better language.</h2>
+            <div class="developedBy">
+                <p>Developed by</p>
+                <img src="/assets/Acetyl Wordmark.svg" alt="Acetyl Logo">
+            </div>
+
+            <a id="getStarted" href="/docs/">Get Started<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="1.243 0.843 9.483 10.345" aria-hidden="true" fill="currentColor">
+                    <path d="M8.949 2.505a.497.497 0 0 1 .546.546L9.5 3.1V8a.5.5 0 0 1-1 0V4.207l-5.147 5.15a.5.5 0 1 1-.707-.707L7.794 3.5H4a.5.5 0 0 1 0-1h4.9z"/>
+                </svg></a>
+        </div>
+
+        <div id="section-2">
+            <div class="info-side">
+                <h3>What is Acyl?</h3>
+                <p>Acyl is a programming language designed for simplicity and explicitness. It has strict syntax to eliminate any assumptions made by the compiler.</p>
+                <p>Uses explicit right to left assignment.</p>
+                <p>Built-in array library for managing dynamic arrays.</p>
+                <p>Block based execution using mandatory keywords.</p>
+                <p>Some unconventional syntax.</p>
+            </div>
+
+            <div id="code-window">
+                <div class="window-header">
+                    <span class="window-title">main.ac</span>
+                    <div class="window-controls-win">
+                        <span class="win-btn win-minimize"></span>
+                        <span class="win-btn win-maximize"></span>
+                        <span class="win-btn win-close"></span>
+                    </div>
+                </div>
+                <div class="window-body">
+<pre class="code-block"><code><span class="token-header">#acyl</span>
+
+<span class="token-comment">// Code starts here</span>
+<span class="token-keyword">fn</span> main()
+    <span class="token-keyword">int</span> num -> <span class="token-number">10</span>
+    <span class="token-keyword">str</span> user -> <span class="token-string">"Developer"</span>
+
+    <span class="token-keyword">array.str</span> items -> [<span class="token-string">"Acyl"</span>, <span class="token-string">"Programming"</span>]
+    <span class="token-keyword">array.add</span>(items, <span class="token-string">"Language"</span>)
+
+    <span class="token-header">acyl.out</span>(<span class="token-string">"Hello, "</span> + user)
+<span class="token-keyword">end</span>
+</code></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="left">
+            <div id="footer-logo">
+                    <img src="/assets/Acetyl Wordmark.svg" onclick="window.location.href = window.location.origin">
+            </div>
+            <p>&copy; 2026 Acetyl. All rights reserved.</p>
+        </div>
+        <div class="right">
+            <div class="footer-list">
+                <h1>Products</h1>
+                <a href="https://acetyl.cc/client/">Acetyl Client</a>
+                <a href="https://acetylnet.onrender.com">AcetylNET</a>
+                <a href="https://acyl.acetyl.cc">Acyl Language</a>
+            </div>
+            <div class="footer-list">
+                <h1>Official URLs</h1>
+                <a href="https://acetyl.cc/client/">acetyl.cc</a>
+                <a href="https://acetyl.onrender.com/client/">acetyl.onrender.com</a>
+            </div>
+            <div class="footer-list">
+                <h1>Documentation</h1>
+                <a href="https://acetyl.cc/support/">Support</a>
+                <a href="/docs/" target="_blank">Docs</a>
+                <a href="/api" target="_blank">API Reference</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
